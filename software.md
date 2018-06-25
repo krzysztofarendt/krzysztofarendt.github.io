@@ -6,24 +6,24 @@ permalink: /software/
 
 # ModestPy
 
-Toolbox for parameter estimation in [Functional Mock-up Units](https://fmi-standard.org/). Interfaces with several optimization algorithms, including gradient-based methods (L-BFGS-B, SLSQP, Truncated Newton), Genetic Algorithm (in-house code), and Generalized Pattern Search (in-house code). Enables to mix the methods in arbitrary sequences.
+Toolbox for parameter estimation in [Functional Mock-up Units](https://fmi-standard.org/). Provides an interface to several optimization algorithms, including gradient-based methods (L-BFGS-B, SLSQP, Truncated Newton), Genetic Algorithm (in-house code), and Generalized Pattern Search (in-house code). Enables to mix the methods in arbitrary sequences.
 
-**Project repository:** [ModestPy](https://github.com/krzysztofarendt/modest-py)
+Project repository: [ModestPy](https://github.com/krzysztofarendt/modest-py)
 
 # EPQuery
 
-EnergyPlus model editing toolbox.
+EPQuery is a tool for exploring and editing large EnergyPlus models (stored in IDF). The tool helps to automate tedious tasks, like adding new schedules or external interface objects. EPQuery supplies basic methods for querying the model, selecting different objects and perform basic editing, but the user can pass custom functions to be used on the selected objects. A model can be explored using fuzzy queries.
 
-**Project repository:** [EPQuery](https://github.com/krzysztofarendt/epquery)
+Project repository: [EPQuery](https://github.com/krzysztofarendt/epquery)
 
 # MShoot
 
-Multiple Shooting MPC with interfaces to [scikit-learn](http://scikit-learn.org), [FMI](https://fmi-standard.org/), and generic models.
+Multiple shooting model predictive control (MPC) supporting [scikit-learn](http://scikit-learn.org) models, [FMI](https://fmi-standard.org/)-compliant models, and generic Python models (through abstract base classes).
 
-**Project repository:** to be released to open source soon
+Project repository: to be released to open source soon
 
 # ModestGA
 
-Genetic Algorithm in Python with SciPy-like interface.
+Basic Genetic Algorithm in Python with SciPy-like interface.
 
-**Project repository:** [ModestGA](https://github.com/krzysztofarendt/modestga)
+Project repository: [ModestGA](https://github.com/krzysztofarendt/modestga)
