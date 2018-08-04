@@ -5,11 +5,11 @@ permalink: /teaching/
 ---
 
 2018/19:
-* Statistics
-* Data Engineering and Programming
+* Fall, Statistics
+* Fall, Data Engineering and Programming
 
 2017/18:
-* Statistics
+* Fall, Statistics
 
 2016/17:
 * Building Modeling and Simulation
