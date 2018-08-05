@@ -4,4 +4,4 @@ title: Publications
 permalink: /publications/
 ---
 
-Nothing here yet...
+The list of my publications can be found at [Google Scholar](https://scholar.google.dk/citations?user=ZDX0THoAAAAJ&hl=en).

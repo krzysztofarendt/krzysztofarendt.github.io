@@ -6,7 +6,7 @@ permalink: /software/
 
 # ModestPy
 
-Toolbox for parameter estimation in [Functional Mock-up Units](https://fmi-standard.org/). Provides an interface to several optimization algorithms, including gradient-based methods (L-BFGS-B, SLSQP, Truncated Newton), Genetic Algorithm (in-house code), and Generalized Pattern Search (in-house code). Enables to mix the methods in arbitrary sequences.
+A toolbox for parameter estimation in [Functional Mock-up Units](https://fmi-standard.org/). Provides an interface to several optimization algorithms, including gradient-based methods (L-BFGS-B, SLSQP, Truncated Newton), Genetic Algorithm (in-house code), and Generalized Pattern Search (in-house code). Enables to mix the methods in arbitrary sequences.
 
 Project repository: [ModestPy](https://github.com/krzysztofarendt/modest-py)
 
@@ -24,6 +24,6 @@ Project repository: to be released to open source soon
 
 # ModestGA
 
-Basic Genetic Algorithm in Python with SciPy-like interface.
+A rather basic Genetic Algorithm written in Python with a SciPy-like interface.
 
 Project repository: [ModestGA](https://github.com/krzysztofarendt/modestga)
