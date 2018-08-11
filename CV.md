@@ -4,6 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
+**Positions:**
 
 Period              | Position
 --------------------|-------------------
@@ -12,3 +13,8 @@ Period              | Position
 2015-07 - 2018.07   | Postdoc, University of Southern Denmark
 2013-06 - 2015.06   | Adiunkt (Assistant Professor), Gdansk University of Technology, Poland
 2009-06 - 2013.05   | Assistant Lecturer / PhD Student, Gdansk University of Technology, Poland
+
+**Education:**
+
+* 2009-2013 - PhD in Building Physics, Gdansk University of Technology, Poland
+* 2004-2009 - MSc in Civil Engineering, Gdansk University of Technology, Poland
