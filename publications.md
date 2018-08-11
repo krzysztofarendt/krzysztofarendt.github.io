@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-The full list of my publications can be found at [Google Scholar](https://scholar.google.dk/citations?user=ZDX0THoAAAAJ&hl=en).
+The full list of my publications can be found on [Google Scholar](https://scholar.google.dk/citations?user=ZDX0THoAAAAJ&hl=en).
 
 Chosen publications:
 
