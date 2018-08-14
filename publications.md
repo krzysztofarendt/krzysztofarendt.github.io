@@ -24,11 +24,11 @@ Chosen publications:
 
 [Arendt - Building Simulation - 2017]: https://link.springer.com/article/10.1007/s12273-016-0320-5
 
-* P. Nelleman, M.B. Kjærgaard, E. Holmegaard, **K. Arendt**, A. Johansen, F.C. Sangogboye, B.N. Jørgensen, [Demand Response with Model Predictive Comfort Compliance in an Office Building][Nelleman - SmartGridComm - 2017], *2017 IEEE International Conference on Smart Grid Communications (SmartGridComm)*, Dresden, Germany, 2017. doi: 10.1109/SmartGridComm.2017.8340733
+* P. Nelleman, M.B. Kjærgaard, E. Holmegaard, **K. Arendt**, A. Johansen, F.C. Sangogboye, B.N. Jørgensen, [Demand Response with Model Predictive Comfort Compliance in an Office Building][Nelleman - SmartGridComm - 2017], *2017 IEEE International Conference on Smart Grid Communications (SmartGridComm)*, Dresden, Germany, 2017.
 
 [Nelleman - SmartGridComm - 2017]: https://ieeexplore.ieee.org/document/8340733/
 
-* M. B. Kjærgaard, **K. Arendt**, A. Clausen, A. Johansen, M. Jradi, B.N. Jørgensen, P. Nelleman, F.C. Sangogboye, C. Veje, M.G. Wollsen, [Demand response in commercial buildings with an Assessable impact on occupant comfort][DR in commercial buildings], *2016 IEEE International Conference on Smart Grid Communications (SmartGridComm)*, Sydney, NSW, 2016, pp. 447-452. doi: 10.1109/SmartGridComm.2016.7778802
+* M. B. Kjærgaard, **K. Arendt**, A. Clausen, A. Johansen, M. Jradi, B.N. Jørgensen, P. Nelleman, F.C. Sangogboye, C. Veje, M.G. Wollsen, [Demand response in commercial buildings with an Assessable impact on occupant comfort][DR in commercial buildings], *2016 IEEE International Conference on Smart Grid Communications (SmartGridComm)*, Sydney, NSW, 2016, pp. 447-452.
 
 [DR in commercial buildings]: https://ieeexplore.ieee.org/document/7778802/
 
