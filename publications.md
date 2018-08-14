@@ -32,7 +32,7 @@ Chosen publications:
 
 [DR in commercial buildings]: https://ieeexplore.ieee.org/document/7778802/
 
-* **K. Arendt**, A. Ionesi, M. Jradi, A.K. Singh, M.B. Kjærgaard, C. Veje, B.N. Jørgensen, [A building model framework for a genetic algorithm multi-objective model predictive control][Arendt - CLIMA - 2016], *12th REHVA World Congress CLIMA 2016REHVA World Congress*, Aalborg, Denmark, 2016.
+* **K. Arendt**, A. Ionesi, M. Jradi, A.K. Singh, M.B. Kjærgaard, C. Veje, B.N. Jørgensen, [A building model framework for a genetic algorithm multi-objective model predictive control][Arendt - CLIMA - 2016], *12th REHVA World Congress CLIMA 2016*, Aalborg, Denmark, 2016.
 
 [Arendt - CLIMA - 2016]: http://vbn.aau.dk/files/233777863/paper_186.pdf
 
