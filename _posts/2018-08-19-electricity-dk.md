@@ -17,11 +17,14 @@ tags: R, ggplot2, visualization
 **Fig. 2:** Mean electricity consumption per capita
 
 ![Consumption in time](/gfx/electricity-dk/consumption_vs_time.png)
-**Fig. 3:** Mean electricity consumption in Denmark in time (polynomial fit, shaded area - 95% confidence interval)
+**Fig. 3:** Mean electricity consumption per municipality (polynomial fit, shaded area - 95% confidence interval)
 
 ![Consumption vs population](/gfx/electricity-dk/avg_consumption_vs_population.png)
-**Fig. 4:** Average electricity consumption vs. municipality population (linear fit, shaded area - 95% confidence interval)
+**Fig. 4:** Mean electricity consumption vs. municipality population (linear fit, shaded area - 95% confidence interval)
 
 ![Consumption vs population](/gfx/electricity-dk/avg_consumption_vs_area.png)
-**Fig. 5:** Average electricity consumption vs. municipality area
+**Fig. 5:** Mean electricity consumption vs. municipality area
+
+![Consumption vs population](/gfx/electricity-dk/avg_consumption_per_area_vs_area.png)
+**Fig. 6:** Mean electricity consumption per area vs. municipality area
 
