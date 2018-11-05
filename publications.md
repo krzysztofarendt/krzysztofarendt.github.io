@@ -14,7 +14,7 @@ Chosen publications:
 
 * **K. Arendt**, M. Jradi, H.R. Shaker, C.T. Veje, [Comparative Analysis of White-, Gray- and Black-box Models for Thermal Simulation of Indoor Environment: Teaching Building Case Study][WhiteGrayBlack], *Proceedings of the 2018 Building Performance Modeling Conference and SimBuild co-organized by ASHRAE and IBPSA-USA*, Chicago, IL, USA, September 26-28, 2018.
 
-[WhiteGrayBlack]: http://findresearcher.sdu.dk/portal/files/143377746/Arendt_et_al_2018_BPACS.pdf
+[WhiteGrayBlack]: http://findresearcher.sdu.dk/portal/files/143379668/Arendt_et_al_2018_BPACS.pdf
 
 * M. Jradi, **K. Arendt**, F.C. Sangogboye, C.G. Mattera, E. Markoska, M.B. Kjærgaard, C.T. Veje, B.N. Jørgensen, [ObepME: An online building energy performance monitoring and evaluation tool to reduce energy performance gaps][ObepMe], *Energy and Buildings* 166 (2018), pp. 196-209.
 
