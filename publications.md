@@ -8,7 +8,7 @@ The full list of my publications can be found on [Google Scholar](https://schola
 
 Chosen publications:
 
-* D.H. Blum, **K. Arendt**, L. Rivalin, M.A. Piette, M. Wetter, C.T. Veje, [Practical factors of envelope model setup and their effects on the performance of model predictive control for building heating][MPCFactors], ventilating, and air conditioning systems, Applied Energy 236 (2019), pp. 410-425.
+* D.H. Blum, **K. Arendt**, L. Rivalin, M.A. Piette, M. Wetter, C.T. Veje, [Practical factors of envelope model setup and their effects on the performance of model predictive control for building heating, ventilating, and air conditioning systems][MPCFactors], Applied Energy 236 (2019), pp. 410-425.
 
 [MPCFactors]: https://www.sciencedirect.com/science/article/pii/S0306261918318099
 
