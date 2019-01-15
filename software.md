@@ -20,7 +20,7 @@ Project repository: [EPQuery](https://github.com/sdu-cfei/epquery)
 
 Multiple shooting model predictive control (MPC) supporting [scikit-learn](http://scikit-learn.org) models, [FMI](https://fmi-standard.org/)-compliant models, and generic Python models (through abstract base classes).
 
-Project repository: to be released to open source soon
+Project repository: [MShoot](https://github.com/sdu-cfei/mshoot)
 
 # ModestGA
 
