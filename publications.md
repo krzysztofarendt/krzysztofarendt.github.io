@@ -14,11 +14,11 @@ Chosen publications:
 
 * **K. Arendt**, M. Jradi, M. Wetter, C.T. Veje, [ModestPy: An Open-Source Python Tool for Parameter Estimation in Functional Mock-up Units][ModestPy], *Proceedings of the American Modelica Conference 2018*, Cambridge, MA, USA, October 9-10, 2018.
 
-[ModestPy]: http://findresearcher.sdu.dk/portal/files/143377618/ModestPy_preprint_2018.pdf
+[ModestPy]: https://portal.findresearcher.sdu.dk/files/145001430/ModestPy_preprint_2018.pdf
 
 * **K. Arendt**, M. Jradi, H.R. Shaker, C.T. Veje, [Comparative Analysis of White-, Gray- and Black-box Models for Thermal Simulation of Indoor Environment: Teaching Building Case Study][WhiteGrayBlack], *Proceedings of the 2018 Building Performance Modeling Conference and SimBuild co-organized by ASHRAE and IBPSA-USA*, Chicago, IL, USA, September 26-28, 2018.
 
-[WhiteGrayBlack]: http://findresearcher.sdu.dk/portal/files/143379668/Arendt_et_al_2018_BPACS.pdf
+[WhiteGrayBlack]: https://www.ashrae.org/File%20Library/Conferences/Specialty%20Conferences/2018%20Building%20Performance%20Analysis%20Conference%20and%20SimBuild/Papers/C025.pdf
 
 * M. Jradi, **K. Arendt**, F.C. Sangogboye, C.G. Mattera, E. Markoska, M.B. Kjærgaard, C.T. Veje, B.N. Jørgensen, [ObepME: An online building energy performance monitoring and evaluation tool to reduce energy performance gaps][ObepMe], *Energy and Buildings* 166 (2018), pp. 196-209.
 
