@@ -5,8 +5,8 @@ permalink: /teaching/
 ---
 
 **2018/19:**
-* Fall, Statistics
-* Fall, Data Engineering and Programming
+* Fall, Statistics >> [Slides](/resources/Statistics_Arendt_2018-19.pdf)
+* Fall, Data Engineering and Programming >> [Interactive slides](https://mybinder.org/v2/gh/krzysztofarendt/deap/master)
 
 **2017/18:**
 * Fall, Statistics
