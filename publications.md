@@ -8,6 +8,10 @@ The full list of my publications can be found on [Google Scholar](https://schola
 
 Chosen publications:
 
+* **K. Arendt**, C.T. Veje, MShoot: an Open Source Framework for Multiple Shooting MPC in Buildings, 16th IBPSA International Conference and Exhibition Building Simulation 2019, Rome 2-4 September, 2019. (to appear)
+
+* **K. Arendt**, A. Clausen, C.G. Mattera, M. Jradi, A. Johansen, C.T. Veje, M.B. Kjægaard, B.N. Jørgensen, Multi-Objective Model Predictive Control Framework for Buildings, 16th IBPSA International Conference and Exhibition Building Simulation 2019, Rome 2-4 September, 2019. (to appear)
+
 * D.H. Blum, **K. Arendt**, L. Rivalin, M.A. Piette, M. Wetter, C.T. Veje, [Practical factors of envelope model setup and their effects on the performance of model predictive control for building heating, ventilating, and air conditioning systems][MPCFactors], *Applied Energy* 236 (2019), pp. 410-425.
 
 [MPCFactors]: https://www.sciencedirect.com/science/article/pii/S0306261918318099
