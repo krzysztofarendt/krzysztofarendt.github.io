@@ -7,5 +7,5 @@ layout: home
 
 <img style="float: left; margin-right: 15px; width: 150px" src="/gfx/ggbridge_photo.jpg">
 
-I'm a Data Scientist with experience in simulation, modeling, and analysis of engineering systems. I work at [Warsaw Institute of Aviation](https://ilot.edu.pl/en) on predictive maintenance algorithms for [GE Transportation a Wabtec Company](https://www.getransportation.com/home). 
+I'm a Data Scientist specialized in simulation, modeling, and analysis of engineering systems. I work at [Warsaw Institute of Aviation](https://ilot.edu.pl/en) on predictive maintenance algorithms for [GE Transportation a Wabtec Company](https://www.getransportation.com/home). 
 I have several years of research experience gained in Poland, Denmark, and USA. I was responsible for a number of university courses, including Statistics, Data Engineering and Programming, and Building Physics. You can find out more about my research and software development under [Publications](/publications) and [Software](/software). 
