@@ -24,6 +24,6 @@ Project repository: [MShoot](https://github.com/sdu-cfei/mshoot)
 
 # ModestGA
 
-Genetic Algorithm written in Python with a SciPy-like interface.
+Parallelized Genetic Algorithm written in Python with a SciPy-like interface.
 
 Project repository: [ModestGA](https://github.com/krzysztofarendt/modestga)

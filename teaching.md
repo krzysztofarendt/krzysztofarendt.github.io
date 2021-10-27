@@ -12,4 +12,4 @@ permalink: /teaching/
 **2017/18:**
 * Fall, Statistics
 
-**Before 2017:** Building Modeling and Simulation (SDU), Building Physics (GUT), Hygrothermal Building Assessment (GUT), Building Materials (GUT).
+**Before 2017:** Building Modeling and Simulation (SDU, Denmark), Building Physics (GUT, Poland).
