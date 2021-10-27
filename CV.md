@@ -27,4 +27,4 @@ Python (advanced); R (advanced); SQL (intermediate); limited knowledge of C++, J
 
 **Scientific and engineering software** (that I worked with for at least 6 months):
 
-Abaqus, EnergyPlus, ESP-r, THERM, AutoCAD, Sketchup
+Abaqus FEA, EnergyPlus, ESP-r, THERM (LBNL), AutoCAD, Sketchup
