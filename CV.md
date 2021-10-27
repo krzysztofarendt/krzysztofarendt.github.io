@@ -21,6 +21,10 @@ Period              | Position
 * 2009-2013 - PhD in Building Physics, [Gdansk University of Technology](https://pg.edu.pl/welcome), Poland
 * 2004-2009 - MSc in Civil Engineering, [Gdansk University of Technology](https://pg.edu.pl/welcome), Poland
 
-**Programming skills:**
+**Programming skills**
 
-Python (advanced); R (advanced); SQL (intermediate); limited knowledge of C++, Java, FORTRAN
+Python (advanced); R (advanced); SQL (intermediate); limited knowledge of C++, Java, FORTRAN, Modelica. I have never used Matlab and I am proud of it ;)
+
+**Scientific and engineering software** (that I worked with for at least 6 months)
+
+Abaqus, EnergyPlus, ESP-r, THERM, AutoCAD, Sketchup
