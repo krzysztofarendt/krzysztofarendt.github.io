@@ -23,7 +23,7 @@ Period              | Position
 
 **Programming skills:**
 
-Python (advanced); R (advanced); SQL (intermediate); limited knowledge of C++, Java, FORTRAN, Modelica. I have never used Matlab and I am proud of it ;)
+Python (advanced); R (advanced); SQL (intermediate); limited knowledge of C++, Java, FORTRAN, Modelica.
 
 **Scientific and engineering software** (that I worked with for at least 6 months):
 
