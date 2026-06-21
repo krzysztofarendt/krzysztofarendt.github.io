@@ -26,3 +26,13 @@ ol li::before {
     left: 0;
     top: 0;
 }
+
+/* Białe tło + padding pod obrazkami treści. Wiele wykresów/diagramów ma
+   przezroczyste tło lub czarne elementy, które giną na ciemnym motywie —
+   biała karta sprawia, że są czytelne niezależnie od motywu. */
+.container img {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
