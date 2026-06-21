@@ -41,11 +41,11 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
+        # Budujemy z baseURL z hugo.yaml (https://krzysztofarendt.com/),
+        # zamiast steps.pages.outputs.base_url, który bywa http:// dopóki
+        # Enforce HTTPS jest wyłączone — to powodowało mixed-content.
         run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
