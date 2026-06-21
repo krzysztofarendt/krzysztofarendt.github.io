@@ -1,0 +1,28 @@
+/* Figure captions: paragraphs containing only italic text */
+p:has(> em:only-child) {
+    text-align: center !important;
+    font-size: 0.85em !important;
+    color: #888 !important;
+    margin-top: 0.25em;
+}
+
+/* Limit image width in content — theme default is width:100% which is too wide */
+p img {
+    max-width: 480px;
+    width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+/* Fix: ordered list numbers align with first line of content, not on a separate line.
+   Root cause: loose Markdown lists generate <p> inside <li>, and the default ::before
+   is inline, which creates an anonymous block above the <p>. */
+ol li {
+    padding-left: calc(var(--global-space) * 3);
+}
+
+ol li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

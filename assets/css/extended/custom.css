@@ -1,0 +1,15 @@
+/* Przyciski profilu w jednym rzędzie, etykiety bez zawijania */
+.profile .buttons {
+    flex-wrap: nowrap;
+}
+
+.profile .buttons a {
+    white-space: nowrap;
+    min-width: unset;
+}
+
+@media (max-width: 600px) {
+    .profile .buttons {
+        flex-wrap: wrap;
+    }
+}

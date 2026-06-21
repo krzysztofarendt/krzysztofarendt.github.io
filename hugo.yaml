@@ -1,0 +1,33 @@
+baseURL: "https://krzysztofarendt.github.io/"
+languageCode: "en-us"
+title: "Krzysztof Arendt"
+theme: "console"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+params:
+  description: "Krzysztof Arendt - AI tooling for engineers and technical systems."
+  author: "Krzysztof Arendt"
+  # Skracanie tytułu na mobile (Krzysztof Arendt -> Kr)
+  titleCutting: false
+  # Animacja wejścia (https://animate.style/); usuń, by wyłączyć
+  animateStyle: "animated zoomIn fast"
+
+  navlinks:
+    - name: "about/"
+      url: "about/"
+    - name: "work/"
+      url: "work/"
+    - name: "publications/"
+      url: "publications/"
+    - name: "projects/"
+      url: "projects/"
+    - name: "contact/"
+      url: "contact/"
