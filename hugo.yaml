@@ -21,8 +21,6 @@ params:
   animateStyle: "animated zoomIn fast"
 
   navlinks:
-    - name: "about/"
-      url: "about/"
     - name: "work/"
       url: "work/"
     - name: "publications/"
