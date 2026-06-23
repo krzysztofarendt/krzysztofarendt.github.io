@@ -1,0 +1,391 @@
+/* ==========================================================================
+   Krzysztof Arendt — własny motyw terminalowy
+   Paleta: GitHub Plus (https://github.com/thenikso/github-plus-theme)
+   ========================================================================== */
+
+/* ---- Font ---------------------------------------------------------------- */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/RobotoMono-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* ---- Paleta (GitHub Plus) — https://github.com/thenikso/github-plus-theme - */
+:root {
+  /* tła / powierzchnie */
+  --white: #ffffff;
+  --gray-50: #fafbfc;
+  --gray-100: #f6f8fa;
+  --border-c: #e1e4e8;
+
+  /* tekst */
+  --fg-dark: #24292e;
+  --fg-muted: #6a737d;
+
+  /* akcenty GitHub */
+  --blue: #005cc5;
+  --green: #22863a;
+  --purple: #6f42c1;
+  --red: #d73a49;
+  --orange: #e36209;
+  --navy: #032f62;
+
+  /* role semantyczne */
+  --bg: var(--white);
+  --fg: var(--fg-dark);
+  --muted: var(--fg-muted);
+  --accent: var(--blue);          /* linki, ścieżki */
+  --prompt: var(--green);         /* user@host, $ */
+  --heading: var(--fg-dark);      /* nagłówki (GitHub: ciemne + podkreślenie) */
+  --cursor: var(--orange);        /* migający kursor */
+  --border: var(--border-c);
+  --code-bg: var(--gray-100);
+  --code-fg: var(--red);          /* inline code */
+  --block-bg: var(--gray-100);    /* blockquote */
+  --thead-bg: var(--gray-100);    /* nagłówek tabeli */
+  --row-alt: var(--gray-50);      /* parzyste wiersze tabeli */
+  --marker: var(--orange);        /* punktory list */
+
+  --font: "Roboto Mono", Menlo, Monaco, "Liberation Mono",
+    "DejaVu Sans Mono", "Courier New", monospace;
+  --fs: 16px;
+  --lh: 1.65;
+  --maxw: 56rem;
+}
+
+/* ---- Reset / podstawy ---------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--fs);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  line-height: var(--lh);
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.terminal {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  min-height: 100vh;
+}
+
+/* ---- Nagłówek / nawigacja jako prompt ------------------------------------ */
+.t-header {
+  margin-bottom: 2rem;
+}
+
+.t-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.t-brand {
+  color: var(--prompt);
+  font-weight: 700;
+  text-decoration: none;
+}
+.t-brand:hover {
+  text-decoration: underline;
+}
+
+.t-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin-left: auto;
+}
+.t-nav-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.t-nav-links a:hover,
+.t-nav-links a.is-active {
+  text-decoration: underline;
+}
+
+/* ---- Linia promptu (user@host:path$ command) ----------------------------- */
+.prompt-line {
+  margin: 0 0 1rem;
+  word-break: break-word;
+}
+.prompt-line .user {
+  color: var(--prompt);
+  font-weight: 700;
+}
+.prompt-line .sep {
+  color: var(--muted);
+}
+.prompt-line .path {
+  color: var(--accent);
+}
+.prompt-line .dollar {
+  color: var(--prompt);
+  margin: 0 0.4rem 0 0.1rem;
+}
+.prompt-line .command {
+  color: var(--fg);
+}
+
+/* ---- Treść odpowiedzi ---------------------------------------------------- */
+.response {
+  /* podczas pisania kursor potrzebuje miejsca; treść rośnie naturalnie */
+}
+
+.response h1,
+.response h2,
+.response h3 {
+  color: var(--heading);
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 2rem 0 0.75rem;
+}
+.response h1 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+.response h2 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+}
+.response h3 {
+  font-size: 1.05rem;
+}
+.response > :first-child {
+  margin-top: 0;
+}
+
+.response p {
+  margin: 0 0 1rem;
+}
+
+.response a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.response a:hover {
+  text-decoration: underline;
+}
+
+.response strong {
+  color: var(--fg);
+  font-weight: 700;
+}
+.response em {
+  color: var(--muted);
+}
+
+/* Inline „równania" / fragmenty, których nie wolno łamać między wierszami */
+.nowrap {
+  white-space: nowrap;
+}
+
+.response ul,
+.response ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+.response li {
+  margin: 0.25rem 0;
+}
+.response ul li::marker {
+  color: var(--marker);
+}
+
+.response hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.response blockquote {
+  margin: 0 0 1rem;
+  padding: 0.5rem 1rem;
+  border-left: 3px solid var(--border);
+  background: var(--block-bg);
+  color: var(--muted);
+}
+
+/* ---- Kod ----------------------------------------------------------------- */
+.response code {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.9em;
+  color: var(--code-fg);
+}
+.response pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+}
+.response pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--fg);
+}
+
+/* ---- Obrazki (białe tło wtapia się w jasny motyw) ------------------------ */
+.response img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  padding: 0.5rem;
+}
+.response figure {
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+}
+.response figure img {
+  display: inline-block;
+}
+
+/* Podpis pod obrazkiem: akapit następujący zaraz po <figure> */
+.response figure + p {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 auto 1.75rem;
+  max-width: 46rem;
+}
+
+/* ---- Tabela renderowana jak w Claude Code -------------------------------- */
+.response table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.response thead {
+  background: var(--thead-bg);
+}
+.response th,
+.response td {
+  text-align: left;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+.response th {
+  color: var(--heading);
+  font-weight: 700;
+}
+.response tbody tr:nth-child(even) {
+  background: var(--row-alt);
+}
+
+/* ---- Kursor migający, podążający za tekstem ------------------------------ */
+.cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.05em;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  background: var(--cursor);
+  animation: cursor-blink 1s steps(1) infinite;
+}
+.cursor.is-typing {
+  animation: none; /* podczas pisania kursor świeci ciągle */
+}
+@keyframes cursor-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Podczas pisania elementy jeszcze nie odsłonięte są ukryte (terminal „rośnie") */
+.tw-hidden {
+  display: none !important;
+}
+
+/* ---- Stopka -------------------------------------------------------------- */
+.t-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.t-footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.t-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Dostępność: bez animacji dla prefers-reduced-motion ----------------- */
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
+}
+
+/* ---- Responsywność ------------------------------------------------------- */
+@media (max-width: 640px) {
+  :root {
+    --fs: 15px;
+  }
+  .terminal {
+    padding: 1.25rem 1rem 3rem;
+  }
+  .t-nav-links {
+    margin-left: 0;
+    width: 100%;
+  }
+}

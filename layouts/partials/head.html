@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+<meta name="robots" content="all,follow">
+<meta name="author" content="{{ .Site.Params.author }}">
+
+{{- /* Asset pipeline: CSS + JS, zminifikowane i z fingerprintem */ -}}
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{ $tw := resources.Get "js/typewriter.js" }}
+{{ $main := resources.Get "js/main.js" }}
+{{ $js := slice $tw $main | resources.Concat "js/bundle.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+{{- /* Open Graph (minimalny) */ -}}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}">{{ end }}

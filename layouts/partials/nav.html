@@ -1,0 +1,11 @@
+<header class="t-header">
+  <div class="t-nav">
+    <a class="t-brand" href="{{ "/" | relURL }}">krzysztof@arendt</a>
+    <nav class="t-nav-links">
+      {{ range .Site.Params.navlinks }}
+        {{ $url := .url | relURL }}
+        <a href="{{ $url }}"{{ if eq $.RelPermalink $url }} class="is-active"{{ end }}>{{ .name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

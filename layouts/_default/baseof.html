@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{- partial "head.html" . -}}
+</head>
+<body>
+  <div class="terminal">
+
+    {{- partial "nav.html" . -}}
+
+    {{- /* Linia promptu: user@host:path$ <komenda> */ -}}
+    {{ $cmd := .Params.prompt }}
+    {{ if not $cmd }}
+      {{ if .IsHome }}
+        {{ $cmd = "whoami" }}
+      {{ else }}
+        {{ $cmd = printf "cat %s.md" (path.Base .RelPermalink) }}
+      {{ end }}
+    {{ end }}
+    {{ $path := "~" }}
+    {{ if not .IsHome }}{{ $path = printf "~/%s" (path.Base .RelPermalink) }}{{ end }}
+
+    <div class="prompt-line">
+      <span class="path">{{ $path }}</span><span class="dollar">$</span><span class="command">{{ $cmd }}</span>
+    </div>
+
+    <main class="response" data-typewriter>
+      {{- block "main" . }}{{ end -}}
+    </main>
+
+    {{- partial "footer.html" . -}}
+
+  </div>
+</body>
+</html>

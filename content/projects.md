@@ -25,9 +25,9 @@ how much effort a production-grade agentic system really takes &mdash; today I
 would build much of it as Claude Code skills rather than hand-rolled
 orchestration.
 
-<img src="/images/publigen/architecture.png" alt="Publigen architecture: source ingestion and web monitoring feeding a multi-agent backend that drafts and grounds write-ups for expert review" style="display:block;width:80%;margin:0 auto;" />
+![Publigen architecture: source ingestion and web monitoring feeding a multi-agent backend that drafts and grounds write-ups for expert review](/images/publigen/architecture.png)
 
-*Fig. 1. Publigen architecture &mdash; source ingestion and web monitoring feed
+*Figure: Publigen architecture &mdash; source ingestion and web monitoring feed
 a RAG store and a multi-agent backend that researches, drafts, and grounds
 write-ups for expert review.*
 
@@ -67,19 +67,19 @@ Reverberation time error vs. measurements: 3–15%.
 
 ![BRAS CR2 seminar room geometry with sources and receivers](/images/building3d-rs/BRAS_CR2_geometry.jpg)
 
-*Fig. 1. BRAS CR2 seminar room geometry with 2 sources (LS1, LS2) and 5 receivers (MP1–MP5).*
+*Figure: BRAS CR2 seminar room geometry with 2 sources (LS1, LS2) and 5 receivers (MP1–MP5).*
 
 ![Acoustic ray tracing — early time steps](/images/building3d-rs/BRAC_CR2_ray_tracing_1.png)
 
-*Fig. 2. Acoustic rays from two sources at early time steps. Visualization via Rerun.*
+*Figure: Acoustic rays from two sources at early time steps. Visualization via Rerun.*
 
 ![Acoustic ray tracing — after multiple reflections](/images/building3d-rs/BRAC_CR2_ray_tracing_2.png)
 
-*Fig. 3. Rays after multiple reflections filling the room.*
+*Figure: Rays after multiple reflections filling the room.*
 
 ![Simulated vs measured room acoustic parameters](/images/building3d-rs/BRAS_CR2_sim_vs_meas.jpg)
 
-*Fig. 4. Simulated vs. measured EDT, RT60, C80, and D50 across octave bands.*
+*Figure: Simulated vs. measured EDT, RT60, C80, and D50 across octave bands.*
 
 ## [building3d](https://github.com/krzysztofarendt/building3d) &middot; 2024&ndash;2025
 
@@ -109,7 +109,7 @@ similar or better results in significantly shorter time.
 
 ![Benchmark: modestga vs. Differential Evolution vs. Monte Carlo](/images/modestga/comparison.png)
 
-*Fig. 1. Comparison of modestga, Differential Evolution (SciPy), and Monte Carlo
+*Figure: Comparison of modestga, Differential Evolution (SciPy), and Monte Carlo
 on the Rastrigin function. Mean of five runs, population = 100, max 1000 generations.*
 
 ## [modest-py](https://github.com/sdu-cfei/modest-py) &middot; 2017&ndash;2022
@@ -128,7 +128,7 @@ automatically generates a parameter evolution plot like the one below.
 
 ![Parameter evolution in the genetic algorithm](/images/modestpy/parameter_evolution.png)
 
-*Fig. 1. Parameter evolution across 100 generations of the genetic algorithm,
+*Figure: Parameter evolution across 100 generations of the genetic algorithm,
 applied to a gray-box building zone model with 7 estimated parameters. Each dot
 is one individual in the population; color encodes training error (NMSE) —
 yellow: high error, purple: low error. The population converges from a broad
@@ -146,9 +146,9 @@ Modelica or other FMI-compliant tools.
 
 ![Multiple shooting method diagram](/images/mshoot/multiple_shooting.png)
 
-*Fig. 1. Multiple shooting divides the horizon into N subperiods. State continuity
-(x&#8203;<sup>R</sup><sub>k</sub> = x&#8203;<sup>L</sup><sub>k+1</sub>) is enforced
-as an NLP constraint.*
+*Figure: Multiple shooting divides the horizon into N subperiods. State continuity
+<span class="nowrap">(x&#8203;<sup>R</sup><sub>k</sub> = x&#8203;<sup>L</sup><sub>k+1</sub>)</span>
+is enforced as an NLP constraint.*
 
 ## [epquery](https://github.com/sdu-cfei/epquery) &middot; 2017&ndash;2019
 
