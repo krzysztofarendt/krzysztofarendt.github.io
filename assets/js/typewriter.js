@@ -18,7 +18,9 @@
   const ATOMIC = new Set(["TABLE", "PRE", "FIGURE", "IMG", "VIDEO"]);
   const SKIP = new Set(["SCRIPT", "STYLE"]);
 
-  const SENTENCE_MS = 70; // odstęp między zdaniami
+  const SENTENCE_MS = 70; // bazowy (i maksymalny) odstęp między zdaniami
+  const TARGET_MS = 2000; // docelowy łączny czas druku strony
+  const MIN_SENTENCE_MS = 8; // dolny limit, by bardzo długie strony nie migały
 
   const reduceMotion = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
@@ -40,11 +42,21 @@
     return false;
   }
 
+  // Czy węzeł leży w bloku atomowym (tabela, <pre>, obrazek) — taki tekst
+  // pojawia się w całości, więc nie liczymy go do tempa „pisania".
+  function inAtomic(node) {
+    for (let p = node.parentNode; p; p = p.parentNode) {
+      if (p.nodeType === Node.ELEMENT_NODE && ATOMIC.has(p.tagName)) return true;
+    }
+    return false;
+  }
+
   function Typewriter(roots) {
     this.roots = roots.filter(Boolean);
     this.cursor = makeCursor();
     this.skipped = false;
     this.texts = new Map(); // textNode -> pełny tekst
+    this.sentenceMs = SENTENCE_MS;
   }
 
   // Ukryj elementy i opróżnij węzły tekstowe (zapamiętując ich treść).
@@ -83,7 +95,7 @@
       }
       acc += tok;
       tn.nodeValue = acc;
-      await sleep(SENTENCE_MS);
+      await sleep(this.sentenceMs);
     }
   };
 
@@ -139,8 +151,24 @@
     this.cursorToEnd();
   };
 
+  // Dobierz tempo: policz wszystkie tokeny-zdania i tak ustaw odstęp, by całość
+  // trwała ~TARGET_MS. Limit górny (SENTENCE_MS) nie spowalnia krótkich stron,
+  // dolny (MIN_SENTENCE_MS) chroni bardzo długie przed miganiem.
+  Typewriter.prototype.computeSpeed = function () {
+    let total = 0;
+    for (const [node, full] of this.texts) {
+      if (inAtomic(node)) continue;
+      total += (full.match(/[^.]*\.\s*|[^.]+$/g) || [full]).length;
+    }
+    this.sentenceMs =
+      total > 0
+        ? Math.min(SENTENCE_MS, Math.max(MIN_SENTENCE_MS, TARGET_MS / total))
+        : SENTENCE_MS;
+  };
+
   Typewriter.prototype.run = async function () {
     for (const root of this.roots) this.prep(root);
+    this.computeSpeed();
     for (let i = 0; i < this.roots.length; i++) {
       if (this.skipped) break;
       await this.walk(this.roots[i]);
