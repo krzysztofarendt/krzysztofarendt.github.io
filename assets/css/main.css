@@ -353,22 +353,6 @@ body {
   display: none !important;
 }
 
-/* ---- Stopka -------------------------------------------------------------- */
-.t-footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-.t-footer a {
-  color: var(--accent);
-  text-decoration: none;
-}
-.t-footer a:hover {
-  text-decoration: underline;
-}
-
 /* ---- Dostępność: bez animacji dla prefers-reduced-motion ----------------- */
 @media (prefers-reduced-motion: reduce) {
   .cursor {
