@@ -25,7 +25,7 @@ how much effort a production-grade agentic system really takes &mdash; today I
 would build much of it as Claude Code skills rather than hand-rolled
 orchestration.
 
-![Publigen architecture: source ingestion and web monitoring feeding a multi-agent backend that drafts and grounds write-ups for expert review](/images/publigen/architecture.png)
+![Publigen architecture: source ingestion and web monitoring feeding a multi-agent backend that drafts and grounds write-ups for expert review](/images/publigen/architecture_ASCII.png)
 
 *Figure: Publigen architecture &mdash; source ingestion and web monitoring feed
 a RAG store and a multi-agent backend that researches, drafts, and grounds
@@ -65,19 +65,15 @@ Schroeder integration to estimate EDT, RT60, C80, and D50 across octave bands
 
 Reverberation time error vs. measurements: 3–15%.
 
-![BRAS CR2 seminar room geometry with sources and receivers](/images/building3d-rs/BRAS_CR2_geometry.jpg)
+![BRAS CR2 seminar room geometry with sources and receivers](/images/building3d-rs/BRAS_CR2_geometry_ASCII.png)
 
 *Figure: BRAS CR2 seminar room geometry with 2 sources (LS1, LS2) and 5 receivers (MP1–MP5).*
 
-![Acoustic ray tracing — early time steps](/images/building3d-rs/BRAC_CR2_ray_tracing_1.png)
+![Acoustic ray tracing — early time steps](/images/building3d-rs/BRAS_CR2_ray_tracing_1_ASCII.png)
 
-*Figure: Acoustic rays from two sources at early time steps. Visualization via Rerun.*
+*Figure: Acoustic rays from two sources at early time steps.*
 
-![Acoustic ray tracing — after multiple reflections](/images/building3d-rs/BRAC_CR2_ray_tracing_2.png)
-
-*Figure: Rays after multiple reflections filling the room.*
-
-![Simulated vs measured room acoustic parameters](/images/building3d-rs/BRAS_CR2_sim_vs_meas.jpg)
+![Simulated vs measured room acoustic parameters](/images/building3d-rs/BRAS_CR2_sim_vs_meas_ASCII.png)
 
 *Figure: Simulated vs. measured EDT, RT60, C80, and D50 across octave bands.*
 
@@ -107,7 +103,7 @@ I benchmarked it against Differential Evolution (SciPy) and naive Monte Carlo on
 the Rastrigin function. For large-scale problems (N > 32), modestga achieves
 similar or better results in significantly shorter time.
 
-![Benchmark: modestga vs. Differential Evolution vs. Monte Carlo](/images/modestga/comparison.png)
+![Benchmark: modestga vs. Differential Evolution vs. Monte Carlo](/images/modestga/comparison_ASCII.png)
 
 *Figure: Comparison of modestga, Differential Evolution (SciPy), and Monte Carlo
 on the Rastrigin function. Mean of five runs, population = 100, max 1000 generations.*
@@ -126,13 +122,13 @@ gradient-based method — making it easy to handle non-convex cost functions
 without committing to a single solver. Whenever GA is used, the tool
 automatically generates a parameter evolution plot like the one below.
 
-![Parameter evolution in the genetic algorithm](/images/modestpy/parameter_evolution.png)
+![Parameter evolution in the genetic algorithm](/images/modestpy/parameter_evolution_ASCII.png)
 
 *Figure: Parameter evolution across 100 generations of the genetic algorithm,
-applied to a gray-box building zone model with 7 estimated parameters. Each dot
-is one individual in the population; color encodes training error (NMSE) —
-yellow: high error, purple: low error. The population converges from a broad
-spread across the search domain toward a narrow, low-error region.*
+applied to a gray-box building zone model with 7 estimated parameters. Each row
+tracks one parameter; every dot is one individual in the population, with
+training error (NMSE) indicated by marker shade. The population converges from a
+broad spread across the search domain toward a narrow, low-error band.*
 
 ## [mshoot](https://github.com/sdu-cfei/mshoot) &middot; 2018&ndash;2019
 
@@ -144,7 +140,7 @@ input constraints. The framework integrates with FMU-based simulation models,
 making it straightforward to apply MPC to building energy systems modeled in
 Modelica or other FMI-compliant tools.
 
-![Multiple shooting method diagram](/images/mshoot/multiple_shooting.png)
+![Multiple shooting method diagram](/images/mshoot/multiple_shooting_ASCII.png)
 
 *Figure: Multiple shooting divides the horizon into N subperiods. State continuity
 <span class="nowrap">(x&#8203;<sup>R</sup><sub>k</sub> = x&#8203;<sup>L</sup><sub>k+1</sub>)</span>
