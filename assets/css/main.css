@@ -353,6 +353,15 @@ body {
   display: none !important;
 }
 
+/* ---- Zdjęcie profilowe (hero) -------------------------------------------- */
+.response img.profile-photo {
+  float: left;
+  height: 248px;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  margin: 0 1.5rem 0.4rem 0;
+}
+
 /* ---- Dostępność: bez animacji dla prefers-reduced-motion ----------------- */
 @media (prefers-reduced-motion: reduce) {
   .cursor {
@@ -371,5 +380,12 @@ body {
   .t-nav-links {
     margin-left: 0;
     width: 100%;
+  }
+  .response img.profile-photo {
+    float: none;
+    display: block;
+    height: auto;
+    width: 140px;
+    margin: 0 0 1.5rem;
   }
 }
