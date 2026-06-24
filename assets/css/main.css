@@ -85,6 +85,10 @@
 
 html {
   font-size: var(--fs);
+  /* Zawsze rezerwuj pionowy scrollbar, by wyśrodkowana treść nie skakała
+     w bok, gdy typewriter dopisuje tekst i pojawia się pasek przewijania.
+     (scrollbar-gutter nie działa na <html> z domyślnym overflow: visible). */
+  overflow-y: scroll;
 }
 
 body {
