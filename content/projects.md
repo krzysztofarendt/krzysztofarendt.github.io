@@ -7,6 +7,34 @@ summary: "Open-source projects"
 Open-source, hobby, and independent projects I have built over the years — in
 my own time, as personal work independent of any employer.
 
+## [Runyte](https://www.runyte.com) &middot; 2026
+
+A terminal workspace built in Rust around a modal text editor. It brings together
+editing, terminals, Git, and language servers, with consistent keyboard navigation
+and a fuzzy finder that searches files, unsaved buffers, and terminal content.
+
+Runyte supports running CLI coding agents alongside your code, editing their
+prompts in the same workspace, and reading Markdown as a formatted page. Optional
+persistent sessions keep terminal processes and language servers running while
+you detach and return later. The focus is on performance, stability, and a minimal
+interface.
+
+## [Closebytes](https://www.closebytes.com) &middot; 2026
+
+An interactive explorer for comparing open-source projects and discovering their
+nearest neighbors. It presents projects as a navigable point cloud, making
+discovery fun, visual, and slightly scientific.
+
+I built it to explore the growing world of ultra-personalized software, where
+building from scratch or adapting a fork can be faster than waiting for an
+official release. That raises interesting questions: how similar projects differ,
+how independent projects get discovered, and where code and ideas come from as
+AI-assisted development becomes more common.
+
+![ASCII-style rendering of the Closebytes point cloud, showing clusters of open-source projects](/images/closebytes/point_cloud_ASCII.png)
+
+*Figure: An ASCII-style rendering of the Closebytes project point cloud.*
+
 ## publigen &middot; 2025&ndash;2026
 
 An agentic system for research, monitoring, and drafting. It ingests documents
